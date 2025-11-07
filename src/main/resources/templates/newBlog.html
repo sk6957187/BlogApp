@@ -54,7 +54,7 @@
         <textarea id="content" rows="6" placeholder="Enter full content" required></textarea>
 
         <label for="publishedAt">Published At</label>
-        <input type="datetime-local" id="publishedAt">
+        <input type="datetime-local" id="publishedAt" required>
 
         <label for="author-id">Author ID</label>
         <input type="number" id="author-id" placeholder="Enter Author ID" required>
@@ -84,7 +84,6 @@
 <script>
     let selectedTags = [];
 
-    // Use current origin for both local and Railway deployment
     const BASE_URL = window.location.origin;
 
     const token = localStorage.getItem('token');
